@@ -1,0 +1,52 @@
+body {
+    margin: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* The container for the navigation is the flexbox container a.k.a "Parent",
+and these are the properties which are assigned*/
+.nav-container {
+    background-color: blanchedalmond;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: space-around;
+    list-style-type: none;
+}
+
+/* These properties represent the default state of the list element in the container for navigation menu, 
+they also have a function to ease the transition back to the default state after the hover no longer applies.*/
+.nav-container li {
+    transition: linear;
+    transition-duration: 50ms;
+    background-color: rgba(255, 50, 50, 0.9);
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+/* Whenever the mouse hovers on the list element, these properties will apply,
+and therefore we can manipulate the sizing and shadows as such it adds some dimensionality and feedback to the UI,
+so the user knows easily what they are selecting.*/
+.nav-container li:hover {
+    transition: linear;
+    transition-duration: 200ms;
+    background-color: rgba(255, 50, 50, 1);
+    box-shadow: 5px 5px 5px black;
+    transform: scale(1.2);
+}
+
+/* This makes the <a> tag not show an underline, so it can be customized as fit for its purpose,
+which is a redirect for a subfolder for the HTML*/
+.nav-container li  a{
+    text-decoration: none;
+    color: black;
+}
+
+/* This indicates to the user on which page they are currently on*/
+#active {
+background-color: rgba(255, 50, 50, 0.5);
+}
+
