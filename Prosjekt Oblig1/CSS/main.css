@@ -7,7 +7,7 @@ body {
 /* The container for the navigation is the flexbox container a.k.a "Parent",
 and these are the properties which are assigned*/
 .nav-container {
-    background-color: blanchedalmond;
+    background-color: grey;
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -22,7 +22,7 @@ they also have a function to ease the transition back to the default state after
 .nav-container li {
     transition: linear;
     transition-duration: 50ms;
-    background-color: rgba(255, 50, 50, 1);
+    background-color: rgba(1, 155, 255, 0.5); /* Clor: Light Blue, 50% opaque*/
     border-radius: 5px;
     padding: 5px;
     margin-left: 20px;
@@ -34,7 +34,7 @@ so the user knows easily what they are selecting.*/
 .nav-container li:hover {
     transition: linear;
     transition-duration: 200ms;
-    background-color: rgba(255, 50, 50, 1);
+    background-color: rgba(1, 255, 50, 1); /* Color: Green */
     box-shadow: 5px 5px 5px black;
     transform: scale(1.2);
 }
@@ -48,6 +48,5 @@ which is a redirect for a subfolder for the HTML*/
 
 /* This indicates to the user on which page they are currently on*/
 #active {
-background-color: rgba(255, 50, 50, 0.5);
+background-color: rgba(1, 155, 255, 1); /* Color: Light Blue*/
 }
-
